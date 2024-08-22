@@ -507,7 +507,7 @@
         <p class="pt-6 text-base text-gray-400 lg:w-1/2 text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
            </div>
 
-           <div class="mt-10 lg:mt-12 grid grid-cols-1 lg:grid-cols-3">
+           <div class="mt-10 lg:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div class="border p-9 rounded-lg flex flex-col justify-center items-center space-y-6">
               <div class="w-[220px] h-[184px] lg:w-[300px] lg:h-[200px] bg-orange-100 rounded-lg space-y-5 flex flex-col justify-center items-center">
                 <img src="./Images/phone.png" alt="">
@@ -531,9 +531,49 @@
 
             </div>
             <div class="lg:col-span-2">
+             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+               <div>
+                <label class="text-xl font-bold" for="text">Your Name</label> <br>
+                <input class="border-none bg-slate-50 p-5 rounded-lg mt-4 w-full" type="text" placeholder="Enter Your Name" name="" id="">
+              </div>
+               <div>
+                <label class="text-xl font-bold" for="text">Your Email</label> <br>
+                <input class="border-none bg-slate-50 p-5 rounded-lg mt-4 w-full" type="text" placeholder="Enter Your Email" name="" id="">
+              </div>
+               <div>
+                <label class="text-xl font-bold" for="text">Subject</label> <br>
+                <input class="border-none bg-slate-50 p-5 rounded-lg mt-4 w-full" type="text" placeholder="Enter Your Subject" name="" id="">
+              </div>
+               <div>
+                <label class="text-xl font-bold" for="text">Phone Number</label> <br>
+                <input class="border-none bg-slate-50 p-5 rounded-lg mt-4 w-full" type="text" placeholder="Enter Your phone Number" name="" id="">
+              </div>
+               <div class="col-span-2">
+                <label class="text-xl font-bold" for="text">Message</label> <br>
+                <textarea class="opacity-80 bg-slate-100 w-full" name="" id="" cols="45" rows="12">Write Your Message</textarea>
+              </div>
+             <div class="col-span-2">
+               <button class="btn btn-error text-white text-xl font-bold w-full">
+                Sent Message
+                  
+              </button>
+             </div>
+
+             </div>
 
             </div>
 
+
+           </div>
+           <div class="bg-slate-100 py-8 flex flex-col justify-center items-center rounded-lg space-y-3">
+            <h1 class="text-2xl font-extrabold">Social Media</h1>
+            <div class="space-x-4 text-xl">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+
+            </div>
 
            </div>
          </section>
