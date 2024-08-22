@@ -8,13 +8,22 @@
    
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- manrope google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<style>
+  .font-manrope{
+      font-family: "Manrope";
+  }
+</style>
 </head>
-<body class="container mx-auto p-5">
+<body class="container mx-auto p-5 font-manrope">
   <header>
     <nav>
       <div class="navbar bg-base-100">
-  <div class="navbar-start">
-    <div class="dropdown">
+       <div class="navbar-start">
+      <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,36 +41,39 @@
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+          <li class="hover:text-red-500 transition-all ease-in-out duration-300 text-red-600"><a href="#">Home</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">About</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">Page</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">Block</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">Contact</a></li>
+       
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">daisyUI</a>
+    <a class=" text-2xl lg:text-4xl font-extrabold text-[#131318]">Hockey<span class="text-red-500">'</span>s</a>
   </div>
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+    <ul class="menu menu-horizontal px-1 text-base font-bold text-[#424247]">
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300 text-red-600 "><a href="#">Home</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">About</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">Page</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">Block</a></li>
+      <li class="hover:text-red-500 transition-all ease-in-out duration-300"><a href="#">Contact</a></li>
     </ul>
   </div>
-  <div class="navbar-end">
-    <a class="btn">Button</a>
+  <div class="navbar-end space-x-10">
+    <div class="invisible md:visible">
+        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+    fill="currentColor"
+    class="h-4 w-4 opacity-70">
+    <path
+      fill-rule="evenodd"
+      d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+      clip-rule="evenodd" />
+  </svg>
+    </div>
+    <a class="btn btn-error text-white text-xl font-bold">Get Ticket</a>
   </div>
 </div>
 
